@@ -1,33 +1,145 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <title>Látnivalók – Szilvásszentmártoni Vendégház</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Szilvásszentmártoni Vendégház</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .latnivalo {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+      .latnivalo img {
+        flex: 1 1 45%;
+        max-width: 100%;
+        height: auto;
+      }
+      .latnivalo-text {
+        flex: 1 1 50%;
+      }
+      @media (max-width: 768px) {
+        .latnivalo {
+          flex-direction: column;
+        }
+        .latnivalo img,
+        .latnivalo-text {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Látnivalók a környéken</h1>
-  </header>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Zselici VadVirág Vendégház</h1>
+            <p>Természet. Csend. Kikapcsolódás Somogy szívében.</p>
+            <a href="elerhetoseg.html" class="hero-button">Foglalás &rarr;</a>
+        </div>
+    </header>
 
-  <nav>
-    <a href="index.html">Kezdőlap</a>
-    <a href="latnivalok.html">Látnivalók</a>
-    <a href="galeria.html">Galéria</a>
-    <a href="https://www.zselicivt.hu/">Vadászati lehetőségek</a>
-    <a href="elerhetoseg.html">Elérhetőség</a>
-  </nav>
+    <nav>
+        <a href="index.html">Kezdőlap</a>
+        <a href="latnivalok.html">Látnivalók</a>
+        <a href="galeria.html">Galéria</a>
+        <a href="https://www.zselicivt.hu/" target="_blank">Vadászati lehetőségek</a>
+        <a href="elerhetoseg.html">Elérhetőség</a>
+    </nav>
 
-  <main>
-    <ul>
-      <li><strong>Zselici Csillagpark</strong> – Tiszta égbolt, csillagászati élmények</li>
-      <li><strong>Kaposvár</strong> – Színház, éttermek, múzeumok</li>
-      <li><strong>Deseda-tó</strong> – Csónakázás, horgászat, vízisport</li>
-    </ul>
-  </main>
+    <main>
+        <section class="latnivalo">
+            <img src="kepek/skanzen.jpg" alt="Szennai Skanzen">
+            <div class="latnivalo-text">
+              <h2>Szennai Skanzen</h2>
+              <p>Élő faluközpontban létrehozott néprajzi múzeum, barokk templommal és hiteles programokkal.</p>
+              <p><strong>Cím:</strong> 7477 Szenna, Rákóczi u. 2.<br>
+              <strong>Email:</strong> szenna@skanzen.hu<br>
+              <strong>Telefon:</strong> +36 30 379 7306</p>
+            </div>
+        </section>
 
-  <footer>
-    &copy; 2025 Szilvásszentmártoni Vendégház
-  </footer>
+        <section class="latnivalo">
+            <img src="kepek/katica_tanya.jpg" alt="Katica Tanya">
+            <div class="latnivalo-text">
+              <h2>Katica Tanya Élményközpont</h2>
+              <p>100-nál is több játszóalkalmatosság, állatsimogató, családi programok minden korosztálynak Patcán.</p>
+              <p><strong>Cím:</strong> 7477 Patca<br>
+              <strong>Email:</strong> info@katicatanya.hu<br>
+              <strong>Telefon:</strong> +36 30 411 6002</p>
+            </div>
+        </section>
+
+        <section class="latnivalo">
+            <img src="kepek/zselici_csilagpark.jpg" alt="Zselici Csillagpark">
+            <div class="latnivalo-text">
+              <h2>Zselici Csillagpark</h2>
+              <p>Planetárium, kilátó, csillagnéző túrák a sötét égbolt alatt. Interaktív kiállítások és természeti élmények.</p>
+              <p><strong>Cím:</strong> 7477 Zselickisfalud-Kardosfa<br>
+              <strong>Email:</strong> info@zselicicsillagpark.hu<br>
+              <strong>Telefon:</strong> +36 82 505 180</p>
+            </div>
+        </section>
+
+        <section class="latnivalo">
+            <img src="kepek/petorke.jpg" alt="Petörke-tó">
+            <div class="latnivalo-text">
+              <h2>Petörke-tó</h2>
+              <p>Horgászat, strand, kemence, rendezvényhelyszín és játszótér. Minden szombaton termelői piac a Petörke Portékával.</p>
+            </div>
+        </section>
+
+        <section class="latnivalo">
+            <img src="kepek/ropoly_to.jpg" alt="Ropolyi-tó">
+            <div class="latnivalo-text">
+              <h2>Ropolyi-tó</h2>
+              <p>Természetvédelmi pihenőhely tájházzal, túraútvonalakkal, kemencével és információs központtal. Népszerű kirándulóhely.</p>
+            </div>
+        </section>
+
+        <section class="latnivalo">
+            <img src="kepek/bosszenfa.png" alt="Szarvasfarm">
+            <div class="latnivalo-text">
+              <h2>Bőszénfai Szarvasfarm</h2>
+              <p>1500 gímszarvas, muflonok, őzek és őshonos háziállatok, állatsimogatók és trófeakiállítás Bőszénfán.</p>
+              <p><strong>Cím:</strong> 7475 Bőszénfa, Malom u. 3.<br>
+              <strong>Telefon:</strong> +36 82 570 519</p>
+            </div>
+        </section>
+
+        <section class="latnivalo">
+            <img src="kepek/viragfurdo.jpg" alt="Virágfürdő">
+            <div class="latnivalo-text">
+              <h2>Virágfürdő Kaposvár</h2>
+              <p>Élményfürdő, gyógyászat, szaunavilág, csúszdák és pancsolók a család minden tagjának.</p>
+              <p><strong>Cím:</strong> 7400 Kaposvár, Csík Ferenc sétány 1.<br>
+              <strong>Telefon:</strong> +36 82 321 044</p>
+            </div>
+        </section>
+
+        <section class="latnivalo">
+            <img src="kepek/bojtoros.jpg" alt="BojToros Étterem">
+            <div class="latnivalo-text">
+              <h2>BojToros Pizzéria és Falatozó</h2>
+              <p>Hangulatos kis étterem friss, helyi alapanyagokból készült ételekkel Szenna központjában.</p>
+              <p><strong>Cím:</strong> 7477 Szenna, Árpád utca 39.<br>
+              <strong>Telefon:</strong> +36 20 983 4929</p>
+            </div>
+        </section>
+
+        <section class="latnivalo">
+            <img src="kepek/szilvas.jpg" alt="Szilvásszentmárton">
+            <div class="latnivalo-text">
+              <h2>Szilvásszentmárton</h2>
+              <p>Zselici falu, egyetlen utcával és sokszínű kulturális élettel. Otthona a „Vadvirág Út” szoborcsoportnak és a F.A.L.U. Fesztiválnak.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Zselici VadVirág Vendégház – Minden jog fenntartva.
+    </footer>
 </body>
 </html>
